@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvani Nalluru - Dancer and Student</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 15px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: #2575fc;
+            border-radius: 5px;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h1 {
+            margin: 15px 0;
+            font-size: 2.8em;
+            color: #333;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .profile p {
+            font-size: 1.2em;
+            color: #555;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 40px 0;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 {
+            color: #2575fc;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2575fc;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul li:hover {
+            background-color: #e0f7fa;
+            transform: translateX(10px);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6a11cb;
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sarvani Nalluru</h1>
+        <p>Dancer &amp; Engineering Student</p>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#training">Training</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="profile" id="profile">
+            <img src="your-image-url.jpg" alt="Sarvani Nalluru">
+            <h1>Sarvani Nalluru</h1>
+            <p>Welcome to my personal website! I am a passionate dancer and a dedicated student.</p>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am Sarvani Nalluru, an accomplished dancer with expertise in various dance forms, especially Kuchipudi. 
+                Currently, I am pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College. My journey in 
+                the world of dance has been enriched by the training I received under Kuchipudi dancer Vedantam Durga Bhavani Garu.
+            </p>
+        </section>
+
+        <section class="section" id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Performed in Sankranti Sambaralu and Samskruti events at my college.</li>
+                <li>Won first prize at the VIVA program conducted by VVIT College.</li>
+                <li>Successfully completed my first year of B.Tech with distinction.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Completed 12th class with excellent grades.</li>
+                <li>Diploma in Satvikabhinayam, a form of Kuchipudi.</li>
+                <li>Enrolled in a diploma in Yakshaganam.</li>
+                <li>Currently pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College.</li>
+            </ul>
+        </section>
+
+        <section class="section" id="training">
+            <h2>Training</h2>
+            <p>
+                I have been trained in Kuchipudi under the guidance of the renowned dancer Vedantam Durga Bhavani. 
+                My training has instilled in me a deep appreciation for the art and has allowed me to excel in my performances.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sarvani Nalluru. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling and Interactivity -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

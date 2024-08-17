@@ -118,72 +118,92 @@
 
         .profile p {
             font-size: 1.2em;
-            color: #555;
-            animation: fadeInUp 1.5s ease-in-out;
+            color: #666;
         }
 
         /* Section Styles */
         .section {
-            margin: 40px 0;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1.5s ease-in-out;
+            margin: 20px 0;
         }
 
-        h2 {
-            color: #2575fc;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #2575fc;
-            display: inline-block;
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #2575fc;
             padding-bottom: 10px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
 
-        ul li {
-            background-color: #f9f9f9;
+        .section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        /* Registration Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        form input, form select {
             margin-bottom: 15px;
-            padding: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        ul li:hover {
-            background-color: #e0f7fa;
-            transform: translateX(10px);
+        form input[type="submit"] {
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #1e60d0;
+        }
+
+        /* Error Styles */
+        .error {
+            color: red;
+            font-size: 0.9em;
+            display: block;
+            margin-top: 5px;
         }
 
         /* Footer Styles */
         footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #6a11cb;
+            background-color: #2575fc;
             color: white;
-            margin-top: 40px;
-            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 10px;
         }
 
-        /* Section Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Sarvani Nalluru</h1>
         <p>Dancer &amp; Engineering Student</p>
     </header>
 
-    <!-- Sticky Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#profile">Profile</a></li>
@@ -191,12 +211,13 @@
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#training">Training</a></li>
+            <li><a href="#register">Register</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section class="profile" id="profile">
-            <img src="your-image-url.jpg" alt="Sarvani Nalluru">
+            <img src="https://github.com/leelakrishnavemulapalli/VEMULAPALLI-LEELA-KRISHNA/blob/main/sarv.jpg?raw=true" alt="Sarvani Nalluru">
             <h1>Sarvani Nalluru</h1>
             <p>Welcome to my personal website! I am a passionate dancer and a dedicated student.</p>
         </section>
@@ -206,7 +227,7 @@
             <p>
                 I am Sarvani Nalluru, an accomplished dancer with expertise in various dance forms, especially Kuchipudi. 
                 Currently, I am pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College. My journey in 
-                the world of dance has been enriched by the training I received under Kuchipudi dancer Vedantam Durga Bhavani Garu.
+                the world of dance has been enriched by the training I received under Kuchipudi dancer Vedantam Durga Bhavani.
             </p>
         </section>
 
@@ -236,13 +257,62 @@
                 My training has instilled in me a deep appreciation for the art and has allowed me to excel in my performances.
             </p>
         </section>
+
+        <section class="section" id="register">
+            <h2>Registration Form</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span id="confirmPasswordError" class="error"></span>
+
+                <label for="course">Select Your Course:</label>
+                <select id="course" name="course">
+                    <option value="kuchipudi">Kuchipudi</option>
+                    <option value="yakshaganam">Yakshaganam</option>
+                    <option value="satvikabhinayam">Satvikabhinayam</option>
+                </select>
+
+                <input type="submit" value="Register">
+                <span id="formError" class="error"></span>
+            </form>
+        </section>
     </div>
 
     <footer>
+        <h2>CONTACT ME</h2>
+        <hr/>
+        <ul>
+            <li><a href="mailto:sarvaninalluru1@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Email" width="80"></a></li>
+            <li><a href="tel:+91 9390957526"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt="Call us" width="30"></a></li>
+            <li><a href="https://wa.me/qr/SYVTAMEV5LY3C1"><img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="Whatsapp"/></a></li>
+            <li><a href="https://www.instagram.com/sriiii.sarvani?igsh=NjE5YWVqZWNqdHc5"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30"></a></li>
+        </ul>
+        <p><a id="bottom" href="#top">GO Back to the top.</a></p>
         <p>&copy; 2024 Sarvani Nalluru. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Smooth Scrolling and Interactivity -->
+    <footer style="background-color: #6a11cb; color: white;">
+        <center>
+            <big><big>
+                <marquee scrollamount="6">
+                    Nalluru Sarvani
+                </marquee>
+            </big></big>
+        </center>
+    </footer>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav ul li a').forEach(anchor => {
@@ -252,6 +322,34 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Registration form validation
+        document.getElementById('registrationForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            // Clear previous error messages
+            document.getElementById('formError').textContent = '';
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+            document.getElementById('confirmPasswordError').textContent = '';
+
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').textContent = 'Passwords do not match!';
+                return;
+            }
+
+            // Add additional validation if needed
+
+            alert('Registration successful!');
+            // Here you can add code to submit the form data to a server or further process the data
+
+            // Optionally, reset the form after successful submission
+            this.reset();
         });
     </script>
 </body>

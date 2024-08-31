@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarvani Nalluru - Dancer and Student</title>
     <style>
-        /* General Styles */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
@@ -14,8 +13,6 @@
             padding: 0;
             scroll-behavior: smooth;
         }
-
-        /* Header Styles */
         header {
             background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
@@ -46,7 +43,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Sticky Navigation Bar */
         nav {
             background: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -82,15 +78,12 @@
             border-radius: 5px;
         }
 
-        /* Container Styles */
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 20px 0;
         }
-
-        /* Profile Section */
         .profile {
             text-align: center;
             margin: 20px 0;
@@ -121,7 +114,6 @@
             color: #666;
         }
 
-        /* Section Styles */
         .section {
             margin: 20px 0;
         }
@@ -142,58 +134,76 @@
             padding-left: 20px;
         }
 
-        /* Registration Form Styles */
-        form {
-            display: flex;
-            flex-direction: column;
+        .registration {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        form label {
-            margin: 10px 0 5px;
-            font-weight: bold;
+        .registration h2 {
+            font-size: 2em;
+            color: #2575fc;
         }
 
-        form input, form select {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .registration p {
+            font-size: 1.2em;
+            margin: 20px 0;
         }
 
-        form input[type="submit"] {
-            background-color: #2575fc;
+        .registration a {
+            display: inline-block;
+            background-color: #6a11cb;
             color: white;
-            border: none;
-            cursor: pointer;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
         }
 
-        form input[type="submit"]:hover {
-            background-color: #1e60d0;
+        .registration a:hover {
+            background-color: #2575fc;
         }
 
-        /* Error Styles */
-        .error {
-            color: red;
-            font-size: 0.9em;
-            display: block;
-            margin-top: 5px;
-        }
-
-        /* Footer Styles */
         footer {
             background-color: #2575fc;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
-        footer a {
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p a {
             color: white;
             text-decoration: none;
         }
 
-        footer a:hover {
+        footer p a:hover {
             text-decoration: underline;
+        }
+        
+        footer .contact-info {
+            margin-top: 10px;
+        }
+
+        footer .contact-info p {
+            margin: 5px 0;
+            font-size: 0.9em;footer.marquee {
+            background-color: #6a11cb;
+            color: white;
+        }
+
+      
         }
     </style>
 </head>
@@ -203,7 +213,6 @@
         <p>Dancer &amp; Engineering Student</p>
     </header>
 
-    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#profile">Profile</a></li>
@@ -211,13 +220,14 @@
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#training">Training</a></li>
-            <li><a href="#register">Register</a></li>
+            <li><a href="#commitment">Commitment</a></li>
+            <li><a href="#registration">Registration</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section class="profile" id="profile">
-            <img src="https://github.com/leelakrishnavemulapalli/VEMULAPALLI-LEELA-KRISHNA/blob/main/sarv.jpg?raw=true" alt="Sarvani Nalluru">
+            <img src="https://raw.githubusercontent.com/SarvaniNalluru/sarvani-jpg/main/vlk%20photo.jpg" alt="Sarvani Nalluru">
             <h1>Sarvani Nalluru</h1>
             <p>Welcome to my personal website! I am a passionate dancer and a dedicated student.</p>
         </section>
@@ -225,131 +235,82 @@
         <section class="section" id="about">
             <h2>About Me</h2>
             <p>
-                I am Sarvani Nalluru, an accomplished dancer with expertise in various dance forms, especially Kuchipudi. 
-                Currently, I am pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College. My journey in 
-                the world of dance has been enriched by the training I received under Kuchipudi dancer Vedantam Durga Bhavani.
+                I am Sarvani Nalluru, an accomplished dancer from Repalle, currently pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College. My journey in the arts is complemented by a deep commitment to academics and painting, which I balance with my studies.
             </p>
         </section>
 
         <section class="section" id="achievements">
             <h2>Achievements</h2>
             <ul>
-                <li>Performed in Sankranti Sambaralu and Samskruti events at my college.</li>
-                <li>Won first prize at the VIVA program conducted by VVIT College.</li>
-                <li>Successfully completed my first year of B.Tech with distinction.</li>
-            </ul>
+                <li><strong>Recognition:</strong>I was honored with a certificate of appreciation at the Maha Brunda Natyam during Krishna Pushkara.</li>
+                <li><strong>Competitions:</strong>I received accolades at the 'Kala Utsav' programs in Repalle and Bapatla divisions in 2017.</li>
+                <li><strong>Performances:</strong> I have given more than 300 performances, showcasing my skills in various significant locations, including Guntur, Krishna, Sattenapalli, Tenali, Bapatla, Vijayawada, and parts of Telangana. My performances in the 'Janmabhoomi - Ma Ooru' programs have also received high praise.</li>
+                <li><strong>Awards:</strong>I have secured numerous awards, including:
+                        <ul><li>A Gold Medal at the 10th International Youth and Child Art Exhibition.</li>
+                        <li>First Prize at the VIVA program organized by VVIT College.</li>
+                        <li>Various accolades at college events like Sankranti Sambaralu and Samskruti.</li>
+                        <li>Recognitions at several cultural and dance festivals.</li></ul>
+                </li>
+                <li><strong>Notable Praise: </strong>I have been commended by prominent figures such as MLA Anagani Sathyaprasad, former MLA Devineni Mallikarjunarao, MP Mopidevi Venkataramana Rao, IAS officer Addanki Sridhar, and Central Minister Pemmasani Chadra Sekhar.</li>
+              </ul>
         </section>
 
         <section class="section" id="education">
             <h2>Education</h2>
-            <ul>
-                <li>Completed 12th class with excellent grades.</li>
-                <li>Diploma in Satvikabhinayam, a form of Kuchipudi.</li>
-                <li>Enrolled in a diploma in Yakshaganam.</li>
-                <li>Currently pursuing a B.Tech degree at Malineni Lakshmaiah Women's Engineering College.</li>
+            <ul><p>Following my 10th and 12th standards, I pursued diplomas in Satvikabhinayam and Yakshaganam to deepen my expertise in Kuchipudi. Now, as a B.Tech student at Malineni Lakshmaiah Women's Engineering College, I actively participate in various college events such as:</p>
+                <ul><li><strong>Sankranti Sambaralu:</strong>Celebrating the Sankranti festival.</li>
+                <li><strong>Samskruti:</strong>A cultural event organized by the college, featuring both traditional and contemporary performances</li>
+                <li><strong>VIVA Program:</strong>I won first prize at this event hosted by VVIT College.</li>
+                </ul><p>My goal is to promote Indian culture through my dance while successfully managing my academic and artistic pursuits.</p>
             </ul>
         </section>
 
         <section class="section" id="training">
             <h2>Training</h2>
             <p>
-                I have been trained in Kuchipudi under the guidance of the renowned dancer Vedantam Durga Bhavani. 
-                My training has instilled in me a deep appreciation for the art and has allowed me to excel in my performances.
+                <li><strong>Kuchipudi: </strong>I have received extensive training under the esteemed Kuchipudi dancer Vedantam Durga Bhavani Garu for nine years.</li>
+                 <li><strong>Additional Training: </strong>I have completed diplomas in Satvikabhinayam and Yakshaganam, further honing my skills in Kuchipudi.</li>
             </p>
         </section>
 
-        <section class="section" id="register">
-            <h2>Registration Form</h2>
-            <form id="registrationForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <span id="nameError" class="error"></span>
+        <section class="section" id="commitment">
+            <h2>Commitment to Indian Culture</h2>
+            <p>
+                I am dedicated to fostering a greater interest in Kuchipudi dance and am grateful for the invaluable support of my parents, Balasri and Nalluru Venkata Sridhar, who have been instrumental in my journey to organize and perform shows.
+            </p>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <span id="emailError" class="error"></span>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <span id="passwordError" class="error"></span>
-
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <span id="confirmPasswordError" class="error"></span>
-
-                <label for="course">Select Your Course:</label>
-                <select id="course" name="course">
-                    <option value="kuchipudi">Kuchipudi</option>
-                    <option value="yakshaganam">Yakshaganam</option>
-                    <option value="satvikabhinayam">Satvikabhinayam</option>
-                </select>
-
-                <input type="submit" value="Register">
-                <span id="formError" class="error"></span>
-            </form>
+        <section class="registration" id="registration">
+            <h2>Register for Events</h2>
+            <p>Join me in upcoming dance performances and cultural programs by registering below.</p>
+            <a href="#">Register Now</a>
         </section>
     </div>
 
-    <footer>
+    
+ <footer>
         <h2>CONTACT ME</h2>
         <hr/>
         <ul>
             <li><a href="mailto:sarvaninalluru1@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Email" width="80"></a></li>
-            <li><a href="tel:+91 9390957526"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Phone_icon.png" alt="Call us" width="30"></a></li>
-            <li><a href="https://wa.me/qr/SYVTAMEV5LY3C1"><img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="Whatsapp"/></a></li>
-            <li><a href="https://www.instagram.com/sriiii.sarvani?igsh=NjE5YWVqZWNqdHc5"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30"></a></li>
+            
         </ul>
         <p><a id="bottom" href="#top">GO Back to the top.</a></p>
         <p>&copy; 2024 Sarvani Nalluru. All Rights Reserved.</p>
-    </footer>
-
-    <footer style="background-color: #6a11cb; color: white;">
-        <center>
-            <big><big>
-                <marquee scrollamount="6">
-                    Nalluru Sarvani
-                </marquee>
-            </big></big>
-        </center>
+    </footer><footer class="marquee">
+        <marquee>Stay tuned for more updates!</marquee>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+      
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Registration form validation
-        document.getElementById('registrationForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirm-password').value;
-
-            // Clear previous error messages
-            document.getElementById('formError').textContent = '';
-            document.getElementById('nameError').textContent = '';
-            document.getElementById('emailError').textContent = '';
-            document.getElementById('passwordError').textContent = '';
-            document.getElementById('confirmPasswordError').textContent = '';
-
-            if (password !== confirmPassword) {
-                document.getElementById('confirmPasswordError').textContent = 'Passwords do not match!';
-                return;
-            }
-
-            // Add additional validation if needed
-
-            alert('Registration successful!');
-            // Here you can add code to submit the form data to a server or further process the data
-
-            // Optionally, reset the form after successful submission
-            this.reset();
         });
     </script>
 </body>
